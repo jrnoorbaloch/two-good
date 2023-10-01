@@ -126,4 +126,151 @@ function cursorAnimation(){
 }
 cursorAnimation()
 
+function productAnimation(){
+  gsap.from("#child1",{
+    x: -700,
+    duration: 1,
+    scrollTrigger:{
+      trigger:`#child1`,
+      scroller: `#main`,
+      start: `top 90%`,
+      end: `bottom 80%`,
+      scrub: 2,
+      stagger: 2
+    }
+  })
+  gsap.from("#child2",{
+    x: 700,
+    duration: 1,
+    scrollTrigger:{
+      trigger:`#child2`,
+      scroller: `#main`,
+      start: `top 90%`,
+      end: `bottom 80%`,
+      scrub: 2,
+      stagger: 2
+    }
+  })
+  gsap.from("#child3",{
+    x: -700,
+    duration: 1,
+    scrollTrigger:{
+      trigger:`#child3`,
+      scroller: `#main`,
+      start: `top 90%`,
+      end: `bottom 80%`,
+      scrub: 2,
+      stagger: 2
+    }
+  })
+  gsap.from("#child4",{
+    x: 700,
+    duration: 1,
+    scrollTrigger:{
+      trigger:`#child4`,
+      scroller: `#main`,
+      start: `top 90%`,
+      end: `bottom 80%`,
+      scrub: 2,
+      stagger: 2
+    }
+  })
+  gsap.from("#child5",{
+    x: -700,
+    duration: 1,
+    scrollTrigger:{
+      trigger:`#child5`,
+      scroller: `#main`,
+      start: `top 90%`,
+      end: `bottom 80%`,
+      scrub: 2,
+      stagger: 2
+    }
+  })
+  gsap.from("#child6",{
+    x: 700,
+    duration: 1,
+    scrollTrigger:{
+      trigger:`#child6`,
+      scroller: `#main`,
+      start: `top 90%`,
+      end: `bottom 80%`,
+      scrub: 2,
+      stagger: 2
+    }
+  })
+
+}
+productAnimation()
+
+function textScrollanimations(){
+  gsap.to('#head1',{
+    x: 520,
+    // duration: 1,
+    scrollTrigger:{
+      trigger: `#head1`,
+      scroller: `#main`,
+    
+      start: `top 40%`,
+      end: `bottom 40%`,
+      scrub: 2
+    }
+  })
+
+  gsap.from('.text-left',{
+    x: -600,
+    opacity: 0,
+    duration: 1,
+    scrollTrigger:{
+      trigger: `.text-left`,
+      scroller: `#main`,
+    
+      start: `top 90%`,
+      end: `bottom 80%`,
+      scrub: 2
+    }
+  })
+  gsap.from('.text-right',{
+    x: 600,
+    opacity: 0,
+    duration: 2,
+    scrollTrigger:{
+      trigger: `.text-left`,
+      scroller: `#main`,
+    
+      start: `top 90%`,
+      end: `bottom 80%`,
+      scrub: 2
+    }
+  })
+  gsap.from('.left-content',{
+    y: 400,
+    duration: 1,
+    scrollTrigger:{
+      trigger: `.left-content`,
+      scroller: `#main`,
+      // markers: true,
+      start: `top 50%`,
+      end: `bottom 60%`,
+      scrub: 2
+    }
+  })
+
+  gsap.from('.icon1',{
+    opacity: 0,
+    duration: 1,
+    scrollTrigger:{
+      trigger: `.icon1`,
+      scroller: `#main`,
+      // markers: true,
+      start: `top 90%`,
+      end: `bottom 80%`,
+      scrub: 2
+    }
+  })
+  
+
+}
+textScrollanimations()
+
 
